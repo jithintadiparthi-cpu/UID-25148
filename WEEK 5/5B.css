@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    
+}
+h1{
+    font-size: 50px;
+    color: rgb(224, 201, 201);
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-size: 30px;
+    color: rgb(204, 56, 56);
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: chocolate;
+    padding: 10px;
+    text-align: center;   
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    color: rgb(230, 224, 224);
+    font-size: 20px;
+}
+nav button:hover{
+    background-color: white;
+    color: chocolate;
+}
+header{
+    background-color: rgb(236, 51, 51);
+    padding: 30px;
+    text-align:center;
+}
+.hero{
+    background-color: bisque;
+    padding: 200px;
+    text-align: center;
+    color: rgb(203, 73, 73);
+    img{
+        width: 400px;
+        height: 300px;
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    button{
+        background-color: transparent;
+        border: 2px solid rgb(203, 73, 73);
+        color: rgb(203, 73, 73);
+        font-size: medium;
+    }
+    button:hover{
+        background-color: rgb(203, 73, 73);
+        color: bisque;
+    }
+}
+.about{
+    background-color: rgb(218, 29, 29);
+    padding: 20px;
+    text-align: center;
+}

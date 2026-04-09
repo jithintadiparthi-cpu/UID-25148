@@ -1,0 +1,301 @@
+UID25148-JITHIN
+<!DOCTYPE html>
+<html>
+<head>
+<title> TMR Jewellery's</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f5f5;
+}
+
+.container{
+display:grid;
+grid-template-columns:220px 1fr;
+grid-template-rows:70px 1fr 40px;
+grid-template-areas:
+"header header"
+"sidebar main"
+"footer footer";
+height:100vh;
+}
+
+.header{
+grid-area:header;
+background:darkkhaki;
+color:white;
+text-align:center;
+padding:20px;
+font-size:24px;
+font-weight:bold;
+}
+
+.sidebar{
+grid-area:sidebar;
+background:#eaeaea;
+padding:20px;
+}
+
+.sidebar h3{
+margin-top:0;
+}
+
+.sidebar a{
+display:block;
+text-decoration:none;
+background:lightcyan;
+color:black;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+text-align:center;
+}
+
+.sidebar a:hover{
+background:turquoise;
+}
+
+.main{
+grid-area:main;
+padding:20px;
+}
+
+.products{
+display:none;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.products:target{
+display:grid;
+}
+
+.product{
+background:white;
+padding:15px;
+border-radius:8px;
+text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+.product img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:5px;
+}
+
+.product h4{
+margin:10px 0;
+}
+
+.price{
+color:#b8860b;
+font-weight:bold;
+}
+
+.buy{
+padding:8px 14px;
+border:none;
+background:#b8860b;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.footer{
+grid-area:footer;
+background:#222;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+grid-template-areas:
+"header"
+"sidebar"
+"main"
+"footer";
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+TDH Jewellery's
+</div>
+
+<div class="sidebar">
+
+<h3>Categories</h3>
+
+<a href="#rings">Rings</a>
+<a href="#necklaces">Necklaces</a>
+<a href="#earrings">Earrings</a>
+<a href="#bracelets">Bracelets</a>
+
+</div>
+
+<div class="main">
+
+<h2>Select a Jewelry Category</h2>
+
+<!-- RINGS -->
+
+<div class="products" id="rings">
+
+<div class="product">
+<img src="https://charlesschwartz.com/wp-content/uploads/2015/08/4-WB-Sapphire-Pair-2405S-Engagment_Group.jpg">
+<h4>Diamond Ring</h4>
+<p class="price">$450</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://cdn.pixabay.com/photo/2018/08/16/19/56/wedding-rings-3611277_1280.jpg">
+<h4>Gold Ring</h4>
+<p class="price">$350</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://i5.walmartimages.com/seo/Newshe-Wedding-Ring-Set-For-Woman-925-Sterling-Silver-Engagement-Rings-Halo-Cz-Round-5A-Size-8_3c0d34e7-c35d-4a92-8893-35130c909d0e.5d8b48990532a9c358612905c71e7a32.jpeg">
+<h4>Silver Ring</h4>
+<p class="price">$220</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://i5.walmartimages.com/seo/Engagement-Ring-Set-Platinum-Plated-Sterling-Silver-Wedding-Ring-Set-for-Women-Simulated-Diamond-Halo-Bridal-Ring_5b970d1c-2222-4828-9cab-1dbb508ef379.160d43901f7c3b77dacb4e9f463e81c5.jpeg">
+<h4>Platinum Ring</h4>
+<p class="price">$520</p>
+<button class="buy">Buy Now</button>
+</div>
+
+</div>
+
+<!-- NECKLACES -->
+
+<div class="products" id="necklaces">
+
+<div class="product">
+<img src="https://c8.alamy.com/comp/DNT2YC/gold-jewelry-little-india-singapore-DNT2YC.jpg">
+<h4>Gold Necklace</h4>
+<p class="price">$600</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://www.jewelry-world.org/wp-content/uploads/2017/11/beautiful-bridal-wedding-Pearl-necklace-design.jpg">
+<h4>Pearl Necklace</h4>
+<p class="price">$420</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://i.pinimg.com/originals/1b/b8/5d/1bb85d78ce1f69da916322f231ad2fe3.png">
+<h4>Diamond Necklace</h4>
+<p class="price">$750</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://www.kendrascott.com/on/demandware.static/-/Sites-kendrascott/default/dwf0d31e4d/Winter-2-2022/Product-Images/kendra-scott-annie-infinity-pendant-necklace-silver-white-crystal-01.jpeg">
+<h4>Silver Necklace</h4>
+<p class="price">$300</p>
+<button class="buy">Buy Now</button>
+</div>
+
+</div>
+
+<!-- EARRINGS -->
+
+<div class="products" id="earrings">
+
+<div class="product">
+<img src="https://i5.walmartimages.com/seo/ChicSilver-925-Sterling-Silver-Small-Hoop-Earrings-for-Women-Cubic-Zirconia-8MM_13181372-3aec-4b3f-95eb-d1c56bd70729.681017d094947140b7284e627ee14d29.jpeg">
+<h4>Silver Earrings</h4>
+<p class="price">$150</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://www.diamondstuds.com/news/wp-content/uploads/2020/06/IArz1xBX.jpeg">
+<h4>Diamond Earrings</h4>
+<p class="price">$520</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://i.ytimg.com/vi/N-vkcRFL_8A/maxresdefault.jpg">
+<h4>Gold Earrings</h4>
+<p class="price">$300</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://cdn0.weddingwire.com/article/3340/original/1920/jpeg/20433-1-bhldn-nicola-bathie-mae-earrings-pearl-wedding-earrings.jpeg">
+<h4>Pearl Earrings</h4>
+<p class="price">$210</p>
+<button class="buy">Buy Now</button>
+</div>
+
+</div>
+
+<!-- BRACELETS -->
+
+<div class="products" id="bracelets">
+
+<div class="product">
+<img src="https://www.kalyanjewellers.net/images/Jewellery/Gold/images/PEKHAM-SANKALP-GOLD-BRACELET.jpg">
+<h4>Gold Bracelet</h4>
+<p class="price">$300</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://i.etsystatic.com/9213817/r/il/edae19/2903184930/il_1080xN.2903184930_gt3g.jpg">
+<h4>Silver Bracelet</h4>
+<p class="price">$180</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://dreamdiamonds.com.au/cdn/shop/articles/Perfect_Tennis_Bracelet_Guide_1400x.webp?v=1742406732">
+<h4>Diamond Bracelet</h4>
+<p class="price">$550</p>
+<button class="buy">Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://casolia.com/wp-content/uploads/2025/07/image0_diy-pearl-bracelet-ideas_diy-pearl-bracelet-ideas.jpg">
+<h4>Pearl Bracelet</h4>
+<p class="price">$260</p>
+<button class="buy">Buy Now</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+@ 2026 Jewelry Store | All Rights Reserved
+</div>
+
+</div>
+
+</body>
+</html>
